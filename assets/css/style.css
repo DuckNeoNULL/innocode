@@ -20,7 +20,7 @@ body {
 
 /* Header Styles */
 header {
-    background-image: url('/flask/template/assets/img/ipg.jpg');
+    background-image: url('/assets/img/ipg.jpg');
     background-size: cover;
     background-position: center;
     color: white;
