@@ -59,6 +59,7 @@
   .space {
     display: block;
     width: 125px;
+    margin-bottom: 4px;
   }
   .navbar_login {
     display: flex;
@@ -66,19 +67,17 @@
     align-items: center;
     flex-grow: 1;
   }
-
   .navbar_register {
     display: flex;
     justify-content: center;
-    align-items: center;
     color: white;
     background-color:#0551A0;
     border-radius: 30px;
     cursor: pointer;
     font-size: 20px;
-    width: 190px;
+    width: 230px;
     height: 44px;
-    line-height: 44px;
+    line-height: 43px;
   }
   /* body img */
 
@@ -127,6 +126,7 @@
   /* About us styles */
   /* content */
   .container_about-section{
+    margin-top: 30px;
     position: relative;
     top: 0;
     left: 0;
@@ -139,31 +139,44 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    max-width: 1075px;
+    width: 1075px;
     text-align: left;
-    position: absolute;
+    position: relative;
     left: 50%;
-    transform: translateX(-50%, -50%);
-}
+    transform: translateX(-50%);
+  }
+  
 
-.about-section h1 {
+  .about-section h1 {
     color: #f57c00;
-    font-size: 36px;
+    font-size: 60px;
     margin-bottom: 20px;
-}
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    line-height: 72.61px;
+  }
 
-.about-section p {
+  .about-section p {
+    text-align: start;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 24.2px;
     color: #333;
     margin-bottom: 20px;
-}
+    font-family: Inter;
+    text-align: justify;
+    display: block;
+    position: relative; /* Add this line */
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-.about-section .highlighted-text {
+  .about-section .highlighted-text {
+
     font-style: italic;
     color: #1e88e5;
     font-weight: bold;
-}
+  }
 
 .explore-button {
     display: inline-block;
@@ -176,7 +189,11 @@
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
+.about-section a {
+  left: 80%;
+  position: relative;
 
+}
 .explore-button span {
     margin-left: 10px;
     transition: margin-left 0.3s ease;
@@ -188,4 +205,73 @@
 
 .explore-button:hover span {
     margin-left: 20px;
+}
+/* using_container */
+
+
+.container_using {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  margin-top: 40px;
+}
+.container_using h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 72.61px;
+  text-align: justify;
+  color: #F37124;
+}
+.container_using h2 {
+  margin-top: 20px;
+  font-family: "inter", sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 33.89px;
+  text-align: justify;
+  color: #0551A0;
+}
+
+.using_section p {
+  text-align: justify;
+}
+
+.using_side-section {
+  border: 2px solid #F37124;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #fff; 
+}
+.using_side-section .side_box:first-child{
+  margin-top: 10px;
+}
+.using_side-section .side_box {
+  margin: 125px 0;
+}
+.left-side {
+  width: 70%;
+  float: left;
+}
+.right-side {
+  width: 70%;
+  float: right;
+}
+.using_side-section a,
+.using_section a {
+  float: right;
+}
+
+.side_box {
+  margin-bottom: 20px;
+}
+
+.side_box h2 {
+  margin-top: 0;
+}
+
+.side_box .btn {
+  margin-top: 10px;
 }
