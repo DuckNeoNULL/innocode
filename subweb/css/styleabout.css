@@ -3,11 +3,21 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #333;
+}
   /* Header styles navbar*/
   #header {
       overflow: hidden;
       box-shadow: 0 6px 4px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      background: white;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 5;
     }
      
   .navbar_all {
@@ -56,10 +66,13 @@
     background-color: #F37124;
     color:white;
   }
-  .space {
+  .navbar_btn:hover a {
+    color: white;
+  }
+  .navbar_btn a {
+    text-decoration: none;
+    color: #F37124 ;
     display: block;
-    width: 125px;
-    margin-bottom: 4px;
   }
   .navbar_login {
     display: flex;
@@ -85,7 +98,7 @@
     /* position: relative;
     top: 0;
     left: 0; */
-    margin-top: 10px;
+    margin-top: 125px;
   }
   .image_container {
       position: relative;
@@ -132,7 +145,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
   }
   .about-section {
     background-color: white;
@@ -231,7 +244,7 @@
   font-style: italic;
   font-weight: 800;
   line-height: 33.89px;
-  text-align: justify;
+  /* text-align: justify; */
   color: #0551A0;
 }
 
@@ -240,10 +253,12 @@
 }
 
 .using_side-section {
+  margin-left: 40px;
   border: 2px solid #F37124;
   padding: 20px;
   border-radius: 30px;
   background-color: #fff; 
+  
 }
 .using_side-section .side_box:first-child{
   margin-top: 10px;
@@ -275,3 +290,5 @@
 .side_box .btn {
   margin-top: 10px;
 }
+/* section_founder */
+

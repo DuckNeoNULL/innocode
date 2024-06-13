@@ -19,7 +19,92 @@ body {
 }
 
 /* Header Styles */
+#header {
+    overflow: hidden;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    background: white;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+  }
+   
+.navbar_all {
+  height: 98px;
+  display: flex;
+  /* justify-content: space-between; */
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0;
+  width: 100%;
+}
+.navbar_all li {
+  text-align: center;
+  margin: 0 28px;
+}
+
+.navbar_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}    
+.navbar_logo a img {
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+.navbar_btn a {
+    text-decoration: none;
+    color: #F37124 ;
+    display: block;
+}
+.navbar_btn {
+  display: flex;
+  line-height: 44px;
+  font-size: 20px;
+  padding: 0px 0px;
+  margin:0 20px;
+  /* padding: 10px 10px; */
+  color: #F37124;
+  border: 2px solid #F37124;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  justify-content: space-around;
+  width: 150px;
+}
+.navbar_btn:hover {
+  background-color: #F37124;
+  color:white;
+}
+.navbar_btn:hover a {
+    color: white ;
+}
+.navbar_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.navbar_register {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color:#0551A0;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 230px;
+  height: 44px;
+  line-height: 43px;
+}
+/* header */
 header {
+    margin-top: 98px;
     background-image: url('../img/ipg.jpg');
     background-size: cover;
     background-position: center;
@@ -159,7 +244,7 @@ nav a:hover {
     z-index: 2;
 }
 .title_header h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 5rem;
     margin-bottom: 15px;
     line-height: 1.2;
@@ -196,7 +281,7 @@ nav a:hover {
 }
 
 .explore-section h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -248,13 +333,13 @@ nav a:hover {
     color: white;
     padding: 12px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block; /* Thay đổi thành inline-block */
-    margin-top: 20px; /* Thêm margin-top */
+    margin-top: 10px; /* Thêm margin-top */
     transition:  0.3s ease;
 }
 
@@ -268,7 +353,7 @@ nav a:hover {
 }
 
 .journal-section h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: center;
@@ -334,11 +419,12 @@ nav a:hover {
 }
 
 .see-posts-btn {
+    margin-top: 30px;
     background-color: #c74a18;
     color: white;
     padding: 12px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 1rem;
     text-transform: uppercase;
