@@ -261,7 +261,6 @@ main {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 var(--padding-6xl) 0 var(--padding-xl);
   box-sizing: border-box;
   max-width: 100%;
   font-size: var(--font-size-41xl);
@@ -334,9 +333,11 @@ main {
 .opponent-options {
   align-self: stretch;
   justify-content: center;
-  padding: 0 var(--padding-xl) 0 133px;
   box-sizing: border-box;
   text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .ellipse-div {
   width: 16px;
@@ -998,6 +999,9 @@ main {
   box-sizing: border-box;
   text-align: justify;
   color: var(--color-darkslateblue);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .frame-child9 {
   width: 415px;
@@ -1613,6 +1617,7 @@ main {
   align-items: flex-start;
   justify-content: space-between;
   gap: var(--gap-xl);
+  /* margin-left:117px; */
 }
 .page-indicators {
   position: absolute;
@@ -1737,6 +1742,7 @@ main {
   text-align: center;
   font-size: var(--font-size-xl);
   color: var(--color-chocolate-200);
+  margin-right: 138px;
 }
 .suggested-profiles {
   width: 1485px;
@@ -1746,6 +1752,7 @@ main {
   justify-content: flex-start;
   gap: var(--gap-21xl);
   max-width: 100%;
+  margin-left: 117px;
 }
 .suggested-opponents {
   align-self: stretch;
@@ -1753,7 +1760,7 @@ main {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 var(--padding-2xl) var(--padding-10xl) var(--padding-xl);
+  /* padding: 0 var(--padding-2xl) var(--padding-10xl) var(--padding-xl); */
   box-sizing: border-box;
   max-width: 100%;
   text-align: justify;
@@ -1770,6 +1777,8 @@ main {
   width: 1820px;
   height: 406px;
   z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .logo-container-child {
   top: 0;
@@ -1791,7 +1800,7 @@ main {
 .logo-container {
   position: absolute;
   top: 0;
-  left: 1418px;
+  left: 60%;
   border-radius: var(--br-xl);
   border: 1px solid var(--color-chocolate-200);
   box-sizing: border-box;

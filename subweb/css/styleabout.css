@@ -8,6 +8,9 @@
     margin: 0;
     color: #333;
 }
+a  {
+  text-decoration: none;
+}
   /* Header styles navbar*/
   #header {
       overflow: hidden;
@@ -190,7 +193,11 @@
     color: #1e88e5;
     font-weight: bold;
   }
-
+  .about-section a {
+    left: 80%;
+    position: relative;
+  
+  }
 .explore-button {
     display: inline-block;
     background-color: #ff9800;
@@ -202,11 +209,7 @@
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
-.about-section a {
-  left: 80%;
-  position: relative;
 
-}
 .explore-button span {
     margin-left: 10px;
     transition: margin-left 0.3s ease;
@@ -292,3 +295,87 @@
 }
 /* section_founder */
 
+.section_founder{
+  position: relative;
+  margin: 0 0 50px 13.2px;
+  display: flex;
+  padding-bottom: 139px;
+  width: fit-content;
+  box-sizing: border-box;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 20px;
+}
+.image{
+  background: url('https://s3-alpha-sig.figma.com/img/28aa/2bd7/fa362078b6d0c22048c9e42d2371b705?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TuAdfgO4LY9RslTWOR~63GwVCuCdciCAdxz-Gr7lKgGwP~QBe-WfA-KnrZiSRaR~XFnIFe~epYxioEgB5-KwMZWQmRUOi6WREjDcDqHLgfhBczzWhMxB2~IL8BddH36wtjXoRiONEgJK8isgy6IGPEPbzZEPc4G0R-ROew~X2eoZSOOfncpKXssjZVLHiiH-1lZk5hWWXVQWZP8JOYQl5u~kCXFpiEk8vGtkj2tg-KFOnJifnysUMbYH~xNt8Lzfl02zAqqkD03523Z5nJhAeOw68E~c7KzATTvciSLehnfT8~ZOtZZzTD0f8fq9NtOYluDGtV~GbdO6R1gf2bo5gA__') 50% / cover no-repeat;
+  margin-top: 221px;
+  width: 624px;
+  height: 352px;
+}
+.text-section {
+  position: absolute;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 60%; 
+  right: 0;
+}
+.text-section h1 {
+  margin-bottom: 13px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 800;
+  font-size: 60px;
+  color: #F37124;
+}
+
+.text-section p {
+  margin: 0 19.2px 15px 0;
+  display: inline-block;
+  text-align: justify;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+
+.text-section ol  {
+  margin-left: 11%;
+}
+
+.text-section ol li strong {
+  font-family: 'Inter';
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: justify;
+  color: #0551A0;
+}
+.text-section ol li {
+  font-family: 'Inter';
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24.2px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+/* fooster */
+
+
+.professionals-content-child {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  width: 95%;
+  object-fit: cover;
+  left: 50%;
+  transform: translateX(-50%);
+}

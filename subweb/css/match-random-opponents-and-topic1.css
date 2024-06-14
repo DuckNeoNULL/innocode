@@ -1269,7 +1269,7 @@
 .frame-child36 {
   height: 477px;
   flex: 1;
-  position: relative;
+  /* position: relative; */
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
