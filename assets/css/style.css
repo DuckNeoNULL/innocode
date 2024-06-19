@@ -550,3 +550,22 @@ p {
   .carousel-indicators {
     display: none;
 } */
+
+
+.image-footer-container {
+    position: relative;
+    text-align: left;
+    padding: 20px;
+}
+
+.footer-social {
+    position: absolute;
+    bottom: 50px; /* Adjust this value as needed to move it up */
+    left: 20px; /* Adjust this value as needed to move it left */
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 20px; /* Adjust this value as needed to move it up */
+    left: 20px; /* Adjust this value as needed to move it left */
+}

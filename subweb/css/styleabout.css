@@ -431,3 +431,7 @@ p {
 .progress-bar {
   --bs-progress-bar-bg: #F37124;
 }
+.space {
+  padding: 0 30px;
+  border-radius: 30px;
+}

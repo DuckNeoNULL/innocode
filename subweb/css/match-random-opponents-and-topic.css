@@ -273,6 +273,7 @@ html {
 }
 .chat1 {
   position: relative;
+  padding: var(--padding-5xs) var(--padding-20xl);
 }
 .opponents-types2 {
   border-radius: var(--br-81xl);
@@ -281,7 +282,7 @@ html {
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: var(--padding-5xs) var(--padding-20xl);
+  /* padding: var(--padding-5xs) var(--padding-20xl); */
   cursor: pointer;
 }
 .frame-wrapper19,
