@@ -22,10 +22,10 @@
                 <img  src="https://upload.wikimedia.org/wikipedia/vi/thumb/2/2d/Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT.svg/716px-Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT.svg.png?20240228115915" alt="">
               </a>
             </li>
-            <li class="navbar_mul col-1 navbar_btn"><a href="#" class="space">Learn</a></li>
+            <li class="navbar_mul col-1 navbar_btn"><a href="./subweb/about.html" class="space">About</a></li>
             <li class="navbar_mul col-1 navbar_btn"><a href="./subweb/match-choose-opponents.html" class="space">Match</a></li>
             <li class="navbar_mul col-1 navbar_btn"><a href="./subweb/Asking_professtional.html" class="space">Asking</a></li>
-            <li class="navbar_mul col-1 navbar_btn"><a href="./subweb/about.html" class="space">About</a></li>
+            <li class="navbar_mul col-1 navbar_btn"><a href="#" class="space">Learn</a></li>
             <div class="navbar_login navbar_btn_blue"><li class="navbar_register"> Login/Register</li></div>     
           </ul>
         </div>
@@ -35,7 +35,7 @@
             <div class="title_header">
                 <h1>FPT University Library</h1>
                 <p>Connecting To The World</p>
-                <button class="play-btn"> Explore</button>
+                <div class="navbar_btn navbar_mul play-btn">Explore</div>
             </div>
         </div>
     </header>
@@ -45,14 +45,14 @@
     <main>
         <section class="explore-section">
             <div class="container">
-                <h2>Most Recommended</h2>
+                <h2 style="color:#F37124">Most Recommended</h2>
                 <p>We pick the most exciting places to have awesome adventures, explore and travel around the world. Our long term mission is to achieve the impossible - visit all the top destinations in the world.</p>
                 <div class="destinations">
-                    <div class="destination">
+                    <a class="destination" href="./subweb/historyvietnam.html">
                         <img src="https://picsum.photos/400/300" alt="Nærøyfjorden">
                         <h3>Mathematic</h3>
                         <p>MAE101</p>
-                    </div>
+                    </a>
                     <div class="destination">
                         <img src="https://picsum.photos/400/300" alt="Antelope Canyon">
                         <h3>Programming</h3>
@@ -118,12 +118,24 @@
             </form>
         </div>
     </div>
+    <!-- Container for the image and the footer content -->
+<div class="image-footer-container">
+    
     <img
-    class="professionals-content-child"
-    alt=""
-    src="./subweb/assets/img/public/group-14@2x.png"
+        class="professionals-content-child"
+        alt=""
+        src="./subweb/assets/img/public/group-14@2x.png"
     />
-    <script>
+    <!-- Footer content to display over the image -->
+    <div class="footer-social">
+        <h3>Follow Us</h3>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    </div>
+    <div class="footer-content">
+        © 2023 F-LIB. All rights reserved.
+    </div>
+</div>
+<script>
             document.querySelector('.sign_up').addEventListener('click', function() {
                     var board = document.querySelector('.board');
                     if (board.classList.contains('hidden')) {

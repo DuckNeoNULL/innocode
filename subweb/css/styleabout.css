@@ -4,12 +4,16 @@
     box-sizing: border-box;
   }
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'inter';
     margin: 0;
     color: #333;
 }
-a  {
+
+  a  {
   text-decoration: none;
+}
+p {
+  font-size: 20px;
 }
   /* Header styles navbar*/
   #header {
@@ -174,7 +178,7 @@ a  {
 
   .about-section p {
     text-align: start;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24.2px;
     color: #333;
     margin-bottom: 20px;
@@ -200,14 +204,15 @@ a  {
   }
 .explore-button {
     display: inline-block;
-    background-color: #ff9800;
+    background-color: #F37124;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    line-height: 18px;
 }
 
 .explore-button span {
@@ -216,7 +221,7 @@ a  {
 }
 
 .explore-button:hover {
-    background-color: #fb8c00;
+    background-color: #F37124;
 }
 
 .explore-button:hover span {
@@ -307,11 +312,14 @@ a  {
   transform: translateX(-50%);
   margin: 0 20px;
 }
-.image{
-  background: url('https://s3-alpha-sig.figma.com/img/28aa/2bd7/fa362078b6d0c22048c9e42d2371b705?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TuAdfgO4LY9RslTWOR~63GwVCuCdciCAdxz-Gr7lKgGwP~QBe-WfA-KnrZiSRaR~XFnIFe~epYxioEgB5-KwMZWQmRUOi6WREjDcDqHLgfhBczzWhMxB2~IL8BddH36wtjXoRiONEgJK8isgy6IGPEPbzZEPc4G0R-ROew~X2eoZSOOfncpKXssjZVLHiiH-1lZk5hWWXVQWZP8JOYQl5u~kCXFpiEk8vGtkj2tg-KFOnJifnysUMbYH~xNt8Lzfl02zAqqkD03523Z5nJhAeOw68E~c7KzATTvciSLehnfT8~ZOtZZzTD0f8fq9NtOYluDGtV~GbdO6R1gf2bo5gA__') 50% / cover no-repeat;
+.image-section {
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 221px;
-  width: 624px;
-  height: 352px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 .text-section {
   position: absolute;
@@ -319,6 +327,21 @@ a  {
   box-sizing: border-box;
   width: 60%; 
   right: 0;
+}
+@media screen and (max-width: 1023px) {
+  .section_founder {
+    flex-direction: column;
+  }
+  .image-section {
+    width: 100%;
+    height: 100%;
+    margin-top: 500px;
+  }
+  .text-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
 }
 .text-section h1 {
   margin-bottom: 13px;
@@ -342,10 +365,10 @@ a  {
   color: #000000;
 }
 
-.text-section ol  {
-  margin-left: 11%;
+.text-section ol {
+  list-style-type: none;
+  margin-left: 60px;
 }
-
 .text-section ol li strong {
   font-family: 'Inter';
   font-size: 20px;
@@ -364,7 +387,9 @@ a  {
   text-align: justify;
   margin-bottom: 15px;
 }
-
+.text-section ol li {
+  
+}
 /* fooster */
 
 
@@ -374,8 +399,35 @@ a  {
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
-  width: 95%;
+  width: 98%;
   object-fit: cover;
   left: 50%;
   transform: translateX(-50%);
+}
+
+
+.image-footer-container {
+  top: 0;
+  bottom: 0;
+  position: relative; /* Establishes a positioning context for footer content */
+  display: inline-block; /* Ensures the container fits the content */
+}
+
+.footer-content {
+  position: absolute; /* Positions the footer content over the image */
+  bottom: 0; /* Aligns the footer at the bottom of the container */
+  left: 0; /* Aligns the footer to the left of the container */
+  width: 98%; /* Ensures the footer spans the width of the container */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
+  color: white; /* Footer text color */
+  text-align: center; /* Centers the footer text */
+  padding: 10px 0; /* Adds some padding inside the footer for better spacing */
+  left: 50%;
+  
+  border-radius: 0 0 15px 15px;
+  bottom: 5px;
+  transform: translateX(-50%);
+}
+.progress-bar {
+  --bs-progress-bar-bg: #F37124;
 }

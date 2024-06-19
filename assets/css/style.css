@@ -6,7 +6,7 @@ html {
 }
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'inter';
     margin: 0;
     color: #333;
 }
@@ -75,7 +75,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   justify-content: space-around;
-  width: 150px;
+  width: 170px;
 }
 .navbar_btn:hover {
   background-color: #F37124;
@@ -146,7 +146,7 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.8); 
     opacity: 0.5;
 }
 /* sign up site */
@@ -259,15 +259,20 @@ nav a:hover {
 
 .play-btn {
     background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 10px;
+    border: 2px solid #F37124;
+    color: #F37124;
+    background-color: white;
+    border-radius: 30px;
     font-size: 1.5rem;
     cursor: pointer;
     position: relative; /* Add this line if not already positioned */
     z-index: 3;
     transition: color 0.3s ease;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 !important;
+    line-height: 56px !important;
+    width: 170px !important;
 }
 
 .play-btn:hover {
@@ -329,7 +334,7 @@ nav a:hover {
 }
 
 .see-more-btn {
-    background-color: #c74a18;
+    background-color: #F37124;
     color: white;
     padding: 12px 25px;
     border: none;
@@ -419,7 +424,7 @@ nav a:hover {
 
 .see-posts-btn {
     margin-top: 30px;
-    background-color: #c74a18;
+    background-color: #F37124;
     color: white;
     padding: 12px 25px;
     border: none;
@@ -481,7 +486,28 @@ footer a:hover {
     flex: 1;
     margin-left: 20px;
 }
-
+h2 {
+    color:#F37124;
+}
+h3 {
+    color:#0551A0;
+}
+.entry p {
+    text-align: left;
+}
+p {
+    font-size: 20px;
+}
+  /* .footer-social a {
+    text-decoration: none;
+    color: #333;
+    position: absolute;
+    top: ;
+  }
+  
+  .footer-social a:hover {
+    text-decoration: underline;
+  } */
 /* calsera */
 /* 
 .carousel {
