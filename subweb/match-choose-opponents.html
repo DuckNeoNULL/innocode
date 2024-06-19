@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-
+    <title>Match</title>
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/styleabout.css" />
@@ -64,7 +64,7 @@
                     <div class="choose-opponents">Choose opponents</div>
                   </div>
                   <div class="opponent-types1" id="opponentTypesContainer1">
-                    <div class="random-opponents" href="./match-random-opponents-and-t.html">Random opponents </div>
+                    <a style="color: #0551A0;" class="random-opponents" href="./match-random-opponents-and-t.html">Random opponents </a>
                   </div>
                   <div class="opponent-types2"  id="opponentTypesContainer2">
                     <a class="chat" href="./chat.html">Chat</a>
@@ -665,41 +665,23 @@
               </div>
             </div>
           </div>
-              <img 
-                class="professionals-content-child"
-                alt=""
-                src="./assets/img/public/group-14@2x.png"
-                /> 
         </section>
         
       </main>
     </div>
+    <div style="margin-top: 30px;" class="footer-line"></div>
     
-    <script>
-      var opponentTypesContainer1 = document.getElementById(
-        "opponentTypesContainer1"
-      );
-      if (opponentTypesContainer1) {
-        opponentTypesContainer1.addEventListener("click", function (e) {
-          window.location.href = "./match-random-opponents-and-t.html";
-        });
-      }
-      
-      var opponentTypesContainer2 = document.getElementById(
-        "opponentTypesContainer2"
-      );
-      if (opponentTypesContainer2) {
-        opponentTypesContainer2.addEventListener("click", function (e) {
-          // Please sync "Match - Chat" to the project
-        });
-      }
-      
-      var frameContainer1 = document.getElementById("frameContainer1");
-      if (frameContainer1) {
-        frameContainer1.addEventListener("click", function (e) {
-          // Please sync "Match - Chat" to the project
-        });
-      }
-      </script>
+    <footer>
+        <div class="container" style="min-height: 0;">
+        
+            <p class="col-6">&copy; 2024 F-LIB. All rights reserved. | <a href="./subweb/about.html">About</a> | <a href="#">Explore</a> | <a href="#">Location</a> | <a href="#">Search</a></p>
+            <div style="margin-top: 20px;" class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Email: example@example.com</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Address: 123 Main St, DA NANG, VN</p>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>

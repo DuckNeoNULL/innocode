@@ -287,6 +287,7 @@ main {
 }
 .random-opponents {
   position: relative;
+  padding: var(--padding-5xs) var(--padding-smi) var(--padding-5xs) var(--padding-sm);
 }
 .opponent-types1 {
   flex: 1;
@@ -297,15 +298,16 @@ main {
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: var(--padding-5xs) var(--padding-smi) var(--padding-5xs)
-    var(--padding-sm);
-  min-width: 138px;
+  /* padding: var(--padding-5xs) var(--padding-smi) var(--padding-5xs)
+    var(--padding-sm); */
+  /* min-width: 138px; */
   white-space: nowrap;
   cursor: pointer;
 }
 .chat {
   position: relative;
   color: var(--color-darkslateblue);
+  padding: var(--padding-5xs) var(--padding-20xl);
 }
 .opponent-list,
 .opponent-options,
@@ -318,7 +320,7 @@ main {
   border-radius: var(--br-81xl);
   border: 1px solid var(--color-darkslateblue);
   justify-content: flex-start;
-  padding: var(--padding-5xs) var(--padding-20xl);
+  /* padding: var(--padding-5xs) var(--padding-20xl); */
   cursor: pointer;
   text-align: left;
 }
@@ -1941,6 +1943,7 @@ main {
   }
   .chat {
     font-size: var(--font-size-base);
+    padding: var(--padding-5xs) var(--padding-20xl);
   }
   .opponent-options {
     padding-left: var(--padding-xl);

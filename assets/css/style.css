@@ -469,9 +469,7 @@ footer a {
 footer a:hover {
     color: #ddd;
 }
-.contact-info {
-    margin-top: 20px;
-}
+
 .footer-flex {
     display: flex;
     justify-content: space-between;

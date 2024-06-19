@@ -442,10 +442,127 @@ p {
 .progress-bar {
   --bs-progress-bar-bg: #F37124;
 }
-<<<<<<< HEAD
 .space {
   padding: 0 30px;
   border-radius: 30px;
 }
-=======
->>>>>>> 0d24eba52be75b0e99f77b4600db7bcf77739274
+/* fooster */
+
+
+.footer {
+  /* background-color: #8C8C8C; Gray box background */
+  color: #FFFFFF;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.follow-us {
+  color: #2C82C9; /* Blue color for Follow Us section */
+  margin-bottom: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+
+.follow-us h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color:#0551A0;
+}
+
+.follow-us a {
+  color: #2C82C9;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.follow-us a:hover {
+  text-decoration: underline;
+}
+
+.rights {
+  color: black; /* Light blue color for rights text */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.university {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+.university img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.university h2 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #8C8C8C; /* Same gray as the background for the text */
+}
+
+.university h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #8C8C8C; /* Same gray as the background for the text */
+}
+.div1 p {
+  font-family: "inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.contact-info {
+}
+.contact-info h2 {
+  display: block;
+  font-size: 1.5em;
+  /* margin-block-start: 0.83em;
+  margin-block-end: 0.83em; */
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  color: #F37124;
+}
+.contact-info p {
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ddd;
+} 
+.footer-line {
+  border-top: 5px solid #ff4400; /* change color as needed */
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ddd;
+}
