@@ -413,31 +413,29 @@ p {
   display: inline-block; /* Ensures the container fits the content */
 }
 
-.footer-content {
-  position: absolute; /* Positions the footer content over the image */
-  bottom: 0; /* Aligns the footer at the bottom of the container */
-  left: 0; /* Aligns the footer to the left of the container */
-  width: 98%; /* Ensures the footer spans the width of the container */
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
-  color: white; /* Footer text color */
-  text-align: center; /* Centers the footer text */
-  padding: 10px 0; /* Adds some padding inside the footer for better spacing */
-  left: 50%;
-  
-  border-radius: 0 0 15px 15px;
-  bottom: 5px;
-  transform: translateX(-50%);
+.footer {
+  position: relative; /* Ensure the footer is positioned relative to its container */
+  height: 100px; /* Adjust this value based on your design */
+  background-color: #E66B2A; /* Ensure the footer has the same background color as the rest */
 }
+
 .footer-social {
-    position: absolute;
-    bottom: 50px; /* Adjust this value as needed to move it up */
-    left: 20px; /* Adjust this value as needed to move it left */
+  position: absolute;
+  color: rgb(0, 0, 0);
+  bottom: 270px; /* Adjust this value as needed to move it up */
+  left: 10%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
 }
 
 .footer-content {
-    position: absolute;
-    bottom: 20px; /* Adjust this value as needed to move it up */
-    left: 20px; /* Adjust this value as needed to move it left */
+  position: absolute;
+  bottom: 20px; /* Adjust this value as needed to move it up */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
+  color: white; /* Footer text color */
+  text-align: center; /* Centers the footer text */
+  padding: 10px; /* Optional: Add some padding for better appearance */
 }
 .progress-bar {
   --bs-progress-bar-bg: #F37124;
