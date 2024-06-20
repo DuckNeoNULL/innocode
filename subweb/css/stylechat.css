@@ -444,6 +444,7 @@
   font-style: italic;
   font-weight: 800;
   z-index: 1;
+  text-align: left;
 }
 .bistar-fill-icon,
 .bistar-fill-icon1,
@@ -936,7 +937,7 @@
 .frame-div {
   flex-direction: row;
   justify-content: center;
-  padding: 0 var(--padding-xl);
+  padding: 0 var(--padding-31xl);
   box-sizing: border-box;
 }
 .frame-parent {

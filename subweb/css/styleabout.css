@@ -99,6 +99,11 @@ p {
     height: 44px;
     line-height: 43px;
   }
+  .navbar_img img {
+    display: flex;
+    align-items: center;
+
+  }
   /* body img */
 
   #page_img {
@@ -536,10 +541,10 @@ p {
   margin: 15px 0;
   font-size: 16px;
   font-weight: 400;
-  color: #ddd;
+  color: #0551A0;
 } 
 .footer-line {
-  border-top: 5px solid #ff4400; /* change color as needed */
+  border-top: 7px solid #F37124; /* change color as needed */
 }
 
 footer .container {
@@ -550,14 +555,17 @@ footer .container {
   text-align: center;
 }
 footer {
-  background-color: #333;
+  background-color: #fff;;
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  border: 7px solid #F37124;
+  color: #53b848;
+
 }
 
 footer a {
-  color: #fff;
+  color: #53b848;
   text-decoration: none;
 }
 

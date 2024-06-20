@@ -980,7 +980,7 @@ main {
 }
 .opponent-profiles {
   align-self: stretch;
-  justify-content: flex-end;
+  justify-content: space-around;
   font-size: var(--font-size-5xl);
   color: var(--color-white);
 }
@@ -999,7 +999,7 @@ main {
 .match-content {
   width: 1702px;
   flex-direction: row;
-  padding: 0 var(--padding-31xl) var(--padding-10xl);
+  /* padding: 0 var(--padding-31xl) var(--padding-10xl); */
   box-sizing: border-box;
   text-align: justify;
   color: var(--color-darkslateblue);
@@ -1756,7 +1756,7 @@ main {
   justify-content: flex-start;
   gap: var(--gap-21xl);
   max-width: 100%;
-  margin-left: 117px;
+  /* margin-left: 117px; */
 }
 .suggested-opponents {
   align-self: stretch;
