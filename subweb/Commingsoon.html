@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="stylelearn.css"> <!-- Link to your CSS file -->
+    <style>
+        body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0; /* Example background color */
+    font-family: Arial, sans-serif; /* Example font */
+                }
+
+                .container h1 {
+                    margin: 0;
+                    font-size: 2em;
+                    color: #333; /* Example text color */
+                }
+
+                .container p {
+                    color: #666; /* Example text color */
+                }
+
+                /* Your existing CSS */
+                .text {
+                    height: 100px;
+                    overflow: hidden;
+                }
+                .container {
+                    position: relative;
+                }
+                label {
+                    position: absolute;
+                    top: 100%;
+                }
+                input {
+                    display: none;
+                }
+                label:after {
+                    content: "Show More";
+                    display: block; /* Ensure the label is clickable */
+                    cursor: pointer; /* Change cursor on hover */
+                }
+                input:checked + label:after {
+                    content: "Show Less";
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Website Coming Soon</h1>
+        
+        <!-- Placeholder for future toggle content -->
+        <input type="checkbox" id="toggle-more" hidden>
+        <div class="text">
+            <p>This is a sneak peek of what's to come. Check back soon!</p>
+        </div>
+    </div>
+
+    <script>
+        // Optional: JavaScript to enhance or modify the toggle behavior
+    </script>
+</body>
+</html>
