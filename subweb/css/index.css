@@ -1746,7 +1746,7 @@ main {
   text-align: center;
   font-size: var(--font-size-xl);
   color: var(--color-chocolate-200);
-  margin-right: 138px;
+  /* margin-right: 138px; */
 }
 .suggested-profiles {
   width: 1485px;
